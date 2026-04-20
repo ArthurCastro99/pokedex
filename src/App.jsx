@@ -1,13 +1,10 @@
 import "./App.css";
-import MyButton from "./components/myButton";
+import Home from "./components/home/home";
 
 function App() {
   return (
     <>
-      <h1>
-        Bem vindo
-      </h1>
-      <MyButton />
+      <Home />
     </>
   );
 }
