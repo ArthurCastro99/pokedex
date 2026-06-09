@@ -1,0 +1,58 @@
+* {
+  list-style: none;
+}
+main {
+  height: 100%;
+  background-color: brown;
+  padding: 1rem;
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+main p {
+  text-align: center;
+  margin-top: 1rem;
+  
+}
+
+main .containerPokemons {
+  width: 90%;
+  margin: auto;
+}
+
+main .containerPokemons ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
+  margin: auto 0;
+  padding: 0;
+}
+
+main .containerPokemons ul li{
+  background-color: rgb(207, 207, 207);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 150px;
+  transition: transform 0.2s;
+}
+
+main .containerPokemons button{
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+main .containerPokemons button:hover{
+  background-color: #555;
+}
