@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import "./DetalhesPokemon.css";
 
 export default function DetalhesPokemon() {
   const { nome } = useParams();
@@ -20,14 +21,14 @@ export default function DetalhesPokemon() {
                 (entry) => entry.language.name === "en",
               );
               return {
-                nome: item.habilidade.name,
-                descricao: textoemIngles
+                nome: item.ability.name,
+                descricao: textoEmIngles
                   ? textoEmIngles.short_effect
                   : "Sem descrição disponível",
               };
             }),
         );
-        Promise.all(buscaHabilidades).then((resultado) => {
+        Promise.all(habilidadesDetalhadas).then((resultado) => {
           setHabilidades(resultado);
         });
       }),
@@ -38,10 +39,15 @@ export default function DetalhesPokemon() {
 
   return (
     <main>
-      <button onclick={() => navigate(-1)}>Voltar</button>
-
+      <div>
+        <button onclick={() => navigate(-1)}>Volt</button>
+        <button onclick={() => navigate(+1)}>Próx</button>
+      </div>
       <h1>{pokemon.name}</h1>
-      <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+      <img
+        src={pokemon.sprites.other.showdown.front_default}
+        alt={pokemon.name}
+      />
 
       <h2>Habilidades</h2>
       <ul>
@@ -55,7 +61,10 @@ export default function DetalhesPokemon() {
       <h2>Movimentos</h2>
       <ul>
         {pokemon.moves.map((movimento) => (
-          <li key={movimento.move.name}>{movimento.move.name}</li>
+          <li key={movimento.move.name}>
+            {movimento.move.url.split("/").slice(-2, -1)[0]} -{" "}
+            {movimento.move.name}
+          </li>
         ))}
       </ul>
     </main>

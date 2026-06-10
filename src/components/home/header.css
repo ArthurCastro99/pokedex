@@ -4,39 +4,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--cor-fundo);
-  padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 3rem;
 }
 
 header button {
-  width: 64px;
-  height: 64px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: var(--cor-fundo);
-  background-image: url(../../assets/images/header/claroEscuro.png);
-  background-size: cover;
-}
-
-.tema-claro {
-  background-color: #ffffff;
-  color: #222222;
-}
-
-.tema-escuro {
-  background-color: #222222;
-  color: #ffffff;
-}
-
-/* Se quiser estilizar botões, cards, etc no tema escuro: */
-.tema-escuro button {
-  background-color: #444444;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.tema-escuro li {
-  background-color: #333333;
+  font-size: 2.5rem;
+  background-color: transparent;
 }

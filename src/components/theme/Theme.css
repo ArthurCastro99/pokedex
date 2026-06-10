@@ -1,0 +1,23 @@
+.tema-claro {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.tema-escuro {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* Se quiser estilizar botões, cards, etc no tema escuro: */
+
+.tema-escuro main .containerPokemons ul li {
+  background-color: #444444;
+}
+
+.tema-escuro main .containerPokemons ul li:hover {
+  background-color: #555555;
+}
+
+.tema-escuro li {
+  background-color: #333333;
+}

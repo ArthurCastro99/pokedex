@@ -16,8 +16,7 @@ export default function Header() {
           </a>
         </div>
 
-        <button onClick={alternarTema}>
-        </button>
+        <button onClick={alternarTema}>{temEscuro ? "☀️" : "🌙"}</button>
       </header>
     </>
   );

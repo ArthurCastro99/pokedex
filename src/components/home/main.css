@@ -1,8 +1,6 @@
-* {
-  list-style: none;
-}
 main {
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
   background-color: brown;
   padding: 1rem;
 }
@@ -13,15 +11,26 @@ main h1 {
   color: white;
 }
 
-main p {
-  text-align: center;
-  margin-top: 1rem;
-  
+main .apresentacao {
+  margin: 2rem;
 }
+main .apresentacao h1{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main .apresentacao p {
+  text-align: center;
+  color: white;
+}
+
+
 
 main .containerPokemons {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 main .containerPokemons ul {
@@ -33,17 +42,24 @@ main .containerPokemons ul {
   text-align: center;
   margin: auto 0;
   padding: 0;
+  width: 100%;
 }
 
-main .containerPokemons ul li{
+main .containerPokemons ul li {
   background-color: rgb(207, 207, 207);
   border-radius: 0.5rem;
   padding: 1rem;
-  width: 150px;
+  min-width: 175px;
   transition: transform 0.2s;
+  text-transform: capitalize;
 }
 
-main .containerPokemons button{
+main .containerPokemons ul li:hover {
+  transform: scale(1.05);
+  background-color: rgb(227, 227, 227);
+}
+
+main .containerPokemons button {
   margin: 2rem auto;
   padding: 0.5rem 1rem;
   background-color: #333;
@@ -53,6 +69,6 @@ main .containerPokemons button{
   cursor: pointer;
 }
 
-main .containerPokemons button:hover{
+main .containerPokemons button:hover {
   background-color: #555;
 }

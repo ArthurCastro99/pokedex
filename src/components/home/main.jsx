@@ -35,8 +35,10 @@ export default function Main() {
   return (
     <>
       <main>
-        <h1>Pokédex</h1>
-        <p>Bem-vindo à sua Pokédex!</p>
+        <div className="apresentacao">
+          <h1>Pokédex</h1>
+          <p>Bem-vindo à sua Pokédex!</p>
+        </div>
         <div className="containerPokemons">
           <ul>
             {pokemons.map((pokemon) => (
@@ -46,7 +48,10 @@ export default function Main() {
                 style={{ cursor: "pointer" }}
               >
                 <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-                <p>{pokemon.name}</p>
+
+                <p>
+                  {pokemon.name} <strong>(#{pokemon.id})</strong>
+                </p>
               </li>
             ))}
           </ul>
