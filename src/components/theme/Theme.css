@@ -1,14 +1,26 @@
 .tema-claro {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
   color: #222222;
 }
 
 .tema-escuro {
-  background-color: #222222;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
   color: #ffffff;
 }
 
 /* Se quiser estilizar botões, cards, etc no tema escuro: */
+
+.tema-claro .detalhesPokemon {
+  color: #ffffff;
+}
+
+.tema-claro .detalhesPokemon h1,
+.tema-claro .detalhesPokemon h2 {
+  color: #222222;
+}
+.tema-claro .detalhesPokemon ul {
+  background-color: #555555;
+}
 
 .tema-escuro main .containerPokemons ul li {
   background-color: #444444;
@@ -18,6 +30,18 @@
   background-color: #555555;
 }
 
+.tema-escuro main.detalhesPokemon ul {
+  background-color: #333333;
+}
+
 .tema-escuro li {
   background-color: #333333;
+}
+
+.tema-escuro main.detalhesPokemon ul.movimentos li {
+  border: 1px solid #d5d5d533;
+}
+
+.tema-escuro main ul.movimentos li {
+  border: 1px solid white;
 }

@@ -7,10 +7,23 @@ header {
   padding: 0 3rem;
 }
 
+header div.logo a img {
+  transition: 0.3s ease-in-out;
+}
+
+header div.logo a img:hover {
+  transform: scale(1.1);
+}
+
 header button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
   font-size: 2.5rem;
   background-color: transparent;
+  transition: 0.2s ease-in-out;
+}
+
+header button:hover {
+  background-color: #c3cfe2;
 }

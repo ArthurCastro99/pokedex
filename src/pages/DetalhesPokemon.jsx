@@ -37,18 +37,43 @@ export default function DetalhesPokemon() {
 
   if (!pokemon) return <p>Carregando...</p>;
 
+  const idAtual = pokemon.id;
+
   return (
-    <main>
-      <div>
-        <button onclick={() => navigate(-1)}>Volt</button>
-        <button onclick={() => navigate(+1)}>Próx</button>
-      </div>
+    <main className="detalhesPokemon">
       <h1>{pokemon.name}</h1>
+      <button
+        className="setaEsquerda"
+        onClick={() => navigate(`/pokemon/${idAtual - 1}`)}
+        disabled={idAtual === 1}
+      >
+        <img
+          src="/src/assets/images/detalhesPokemons/seta.png"
+          alt="Seta apontando à esquerda"
+        />
+      </button>
       <img
         src={pokemon.sprites.other.showdown.front_default}
         alt={pokemon.name}
       />
 
+      <h2>Tipo</h2>
+
+      <ul>
+        {pokemon.types.map((pokemons) => (
+          <li key={pokemons.type.name}>{pokemons.type.name}</li>
+        ))}
+      </ul>
+
+      <button
+        className="setaDireita"
+        onClick={() => navigate(`/pokemon/${idAtual + 1}`)}
+      >
+        <img
+          src="/src/assets/images/detalhesPokemons/seta.png"
+          alt="Seta apontando à direita"
+        />
+      </button>
       <h2>Habilidades</h2>
       <ul>
         {habilidades.map((habilidade) => (
@@ -59,7 +84,7 @@ export default function DetalhesPokemon() {
         ))}
       </ul>
       <h2>Movimentos</h2>
-      <ul>
+      <ul className="movimentos">
         {pokemon.moves.map((movimento) => (
           <li key={movimento.move.name}>
             {movimento.move.url.split("/").slice(-2, -1)[0]} -{" "}

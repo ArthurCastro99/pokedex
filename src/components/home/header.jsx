@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <header>
         <div className="logo">
-          <a href="#">
+          <a href="http://localhost:5173/">
             <img
               src="./../../../src/assets/images/header/icon-logo.png"
               alt="Icon poke ball"

@@ -4,7 +4,7 @@ import "./../theme/Theme.css";
 const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [temEscuro, setTemEscuro] = useState(false);
+  const [temEscuro, setTemEscuro] = useState(true);
 
   function alternarTema() {
     setTemEscuro((anterior) => !anterior);

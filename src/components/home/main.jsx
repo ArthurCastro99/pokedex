@@ -48,7 +48,6 @@ export default function Main() {
                 style={{ cursor: "pointer" }}
               >
                 <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-
                 <p>
                   {pokemon.name} <strong>(#{pokemon.id})</strong>
                 </p>
