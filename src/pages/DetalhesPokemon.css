@@ -1,32 +1,29 @@
 main.detalhesPokemon {
   text-align: center;
-  position: relative;
 }
 
-main.detalhesPokemon button {
+main.detalhesPokemon .nomeSetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+main.detalhesPokemon .nomeSetas button {
   display: flex;
   border-radius: 0.5rem;
   cursor: pointer;
-  margin: 0 7.5rem 0;
   border: none;
   transition: 0.3s ease-in-out;
-  position: absolute;
 }
 
-main.detalhesPokemon button img {
+main.detalhesPokemon .nomeSetas button img {
   width: 2rem;
   height: 2rem;
 }
-
-main.detalhesPokemon button.setaEsquerda {
-  top: 3.5rem;
-  left: 23rem;
-}
-
-main.detalhesPokemon button.setaDireita {
+main.detalhesPokemon .nomeSetas button.setaDireita {
   rotate: 180deg;
-  top: 3.5rem;
-  right: 23rem;
 }
 
 main.detalhesPokemon h1 {
@@ -44,8 +41,16 @@ main.detalhesPokemon ul {
   max-width: 550px;
   margin: 0 auto;
   border-radius: 1rem;
-  background-color: white;
   padding: 0.7rem 1rem 1rem;
+}
+
+main.detalhesPokemon ul.tipoCor li {
+  text-transform: capitalize;
+  padding: 0.25rem 0.3rem 0.4rem;
+  border-radius: 0.8rem;
+  color: "#fff";
+  display: inline-block;
+  margin: 0.2rem;
 }
 
 main.detalhesPokemon ul li h3 {

@@ -1,0 +1,44 @@
+footer {
+  width: 100%;
+  min-height: 15rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.114);
+  padding: 2.5rem 3rem 1rem;
+}
+
+footer div {
+  width: 100%;
+}
+
+footer div ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  gap: 3rem;
+}
+
+footer div ul li.logoSocialMidia a img {
+  width: 5rem;
+  height: 5rem;
+  transition: 0.2s ease-in-out;
+}
+
+footer div ul li.logoSocialMidia a img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  footer{
+    padding: 2rem 1rem 1rem;
+  }
+  footer div ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

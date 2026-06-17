@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./DetalhesPokemon.css";
+import { coresTipos } from "../utils/coresTipos";
 
 export default function DetalhesPokemon() {
   const { nome } = useParams();
@@ -41,17 +42,30 @@ export default function DetalhesPokemon() {
 
   return (
     <main className="detalhesPokemon">
-      <h1>{pokemon.name}</h1>
-      <button
-        className="setaEsquerda"
-        onClick={() => navigate(`/pokemon/${idAtual - 1}`)}
-        disabled={idAtual === 1}
-      >
-        <img
-          src="/src/assets/images/detalhesPokemons/seta.png"
-          alt="Seta apontando à esquerda"
-        />
-      </button>
+      <div className="nomeSetas">
+        <button
+          className="setaEsquerda"
+          onClick={() => navigate(`/pokemon/${idAtual - 1}`)}
+          disabled={idAtual === 1}
+        >
+          <img
+            src="/src/assets/images/detalhesPokemons/seta.png"
+            alt="Seta apontando à esquerda"
+          />
+        </button>
+        <h1>{pokemon.name}</h1>
+
+        <button
+          className="setaDireita"
+          onClick={() => navigate(`/pokemon/${idAtual + 1}`)}
+        >
+          <img
+            src="/src/assets/images/detalhesPokemons/seta.png"
+            alt="Seta apontando à direita"
+          />
+        </button>
+      </div>
+
       <img
         src={pokemon.sprites.other.showdown.front_default}
         alt={pokemon.name}
@@ -59,21 +73,19 @@ export default function DetalhesPokemon() {
 
       <h2>Tipo</h2>
 
-      <ul>
-        {pokemon.types.map((pokemons) => (
-          <li key={pokemons.type.name}>{pokemons.type.name}</li>
+      <ul className="tipoCor">
+        {pokemon.types.map((item) => (
+          <li
+            key={item.type.name}
+            style={{
+              backgroundColor: coresTipos[item.type.name],
+            }}
+          >
+            {item.type.name}
+          </li>
         ))}
       </ul>
 
-      <button
-        className="setaDireita"
-        onClick={() => navigate(`/pokemon/${idAtual + 1}`)}
-      >
-        <img
-          src="/src/assets/images/detalhesPokemons/seta.png"
-          alt="Seta apontando à direita"
-        />
-      </button>
       <h2>Habilidades</h2>
       <ul>
         {habilidades.map((habilidade) => (

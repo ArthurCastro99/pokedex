@@ -8,7 +8,28 @@
   color: #ffffff;
 }
 
-/* Se quiser estilizar botões, cards, etc no tema escuro: */
+/* Tema claro */
+
+.tema-claro header button:hover {
+  background-color: #555555;
+}
+
+.tema-claro header nav ul li {
+  background-color: rgb(207, 207, 207);
+}
+
+.tema-claro header nav ul li:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+.tema-claro main div {
+  color: #222222;
+}
+
+.tema-claro main .containerPokemons section select {
+  background-color: #000;
+  color: #fff;
+}
 
 .tema-claro .detalhesPokemon {
   color: #ffffff;
@@ -18,9 +39,12 @@
 .tema-claro .detalhesPokemon h2 {
   color: #222222;
 }
+
 .tema-claro .detalhesPokemon ul {
   background-color: #555555;
 }
+
+/* Tema escuro */
 
 .tema-escuro main .containerPokemons ul li {
   background-color: #444444;
@@ -31,10 +55,6 @@
 }
 
 .tema-escuro main.detalhesPokemon ul {
-  background-color: #333333;
-}
-
-.tema-escuro li {
   background-color: #333333;
 }
 
