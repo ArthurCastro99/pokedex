@@ -49,7 +49,7 @@ export default function DetalhesPokemon() {
           disabled={idAtual === 1}
         >
           <img
-            src="./public/images/detalhesPokemons/seta.png"
+            src="/pokedex/images/detalhesPokemons/seta.png"
             alt="Seta apontando à esquerda"
           />
         </button>
@@ -60,7 +60,7 @@ export default function DetalhesPokemon() {
           onClick={() => navigate(`/pokemon/${idAtual + 1}`)}
         >
           <img
-            src="./public/images/detalhesPokemons/seta.png"
+            src="/pokedex/images/detalhesPokemons/seta.png"
             alt="Seta apontando à direita"
           />
         </button>
