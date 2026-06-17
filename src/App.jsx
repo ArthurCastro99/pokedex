@@ -1,6 +1,6 @@
-import Header from "./components/home/header";
-import Main from "./components/home/main";
-import Footer from "./components/home/footer";
+import Header from "./components/header";
+import Main from "./components/main";
+import Footer from "./components/footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./theme/ThemeContext";
 import DetalhesPokemon from "./pages/DetalhesPokemon";

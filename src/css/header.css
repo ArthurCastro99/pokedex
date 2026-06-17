@@ -7,11 +7,11 @@ header {
   padding: 0 3rem;
 }
 
-header div.logo a img {
+header div.logo img {
   transition: 0.3s ease-in-out;
 }
 
-header div.logo a img:hover {
+header div.logo img:hover {
   transform: scale(1.1);
 }
 
@@ -44,8 +44,8 @@ header button:hover {
   background-color: #c3cfe2;
 }
 
-@media (max-width: 480px){
-  header{
+@media (max-width: 480px) {
+  header {
     padding: 0 1rem;
   }
 }

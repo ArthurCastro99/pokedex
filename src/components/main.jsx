@@ -1,4 +1,4 @@
-import "./main.css";
+import "../css/main.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { coresTipos } from "../utils/coresTipos";
