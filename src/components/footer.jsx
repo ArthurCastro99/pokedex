@@ -8,10 +8,7 @@ export default function Footer() {
           <ul>
             <li className="logoSocialMidia">
               <a href="https://github.com/ArthurCastro99" target="_blank">
-                <img
-                  src="../../../src/assets/images/footer/github.png"
-                  alt="Icon github"
-                />
+                <img src="./public/images/footer/github.png" alt="Icon github" />
               </a>
             </li>
             <li className="logoSocialMidia">
@@ -20,7 +17,7 @@ export default function Footer() {
                 target="_blank"
               >
                 <img
-                  src="../../../src/assets/images/footer/instagram.png"
+                  src="./public/images/footer/instagram.png"
                   alt="Icon instagram"
                 />
               </a>
@@ -31,7 +28,7 @@ export default function Footer() {
                 target="_blank"
               >
                 <img
-                  src="../../../src/assets/images/footer/linkedin.png"
+                  src="./public/images/footer/linkedin.png"
                   alt="Icon linkedin"
                 />
               </a>

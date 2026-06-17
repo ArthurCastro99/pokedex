@@ -11,7 +11,7 @@ export default function Header() {
       <header>
         <div className="logo">
           <img
-            src="./../../../src/assets/images/header/icon-logo.png"
+            src="./public/images/header/icon-logo.png"
             alt="Icon poke ball"
             onClick={() => navigate("/")}
             style={{ cursor: "pointer" }}
